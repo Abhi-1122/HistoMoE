@@ -1,0 +1,107 @@
+# python3 extract_embeddings.py > logs/extract_embeddings.log
+Processing 26 samples on cuda
+  Processing TENX190 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['000x009', '000x010', '000x011']
+5768 patches, dim=2048
+  Processing TENX189 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['000x007', '000x008', '000x009']
+5817 patches, dim=2048
+  Processing TENX171 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['0000x0004', '0000x0007', '0000x0009']
+1675 patches, dim=2048
+  Processing TENX170 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['0001x0009', '0001x0010', '0001x0011']
+1689 patches, dim=2048
+  Processing TENX169 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['0000x0001', '0000x0002', '0000x0003']
+1805 patches, dim=2048
+  Processing TENX168 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['0000x0013', '0000x0014', '0000x0015']
+1825 patches, dim=2048
+  Processing TENX163 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['0000x0006', '0000x0018', '0000x0019']
+2431 patches, dim=2048
+  Processing TENX158 (SKCM)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['000x016', '000x017', '000x018']
+1535 patches, dim=2048
+  Processing TENX141 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['000x010', '000x011', '000x012']
+3069 patches, dim=2048
+  Processing TENX140 (PAAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['002x010', '002x011', '002x012']
+3517 patches, dim=2048
+  Processing TENX126 (PAAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['000x000', '000x001', '000x002']
+1916 patches, dim=2048
+  Processing TENX118 (LUAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['001x007', '001x008', '001x009']
+1838 patches, dim=2048
+  Processing TENX117 (SKCM)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['002x028', '002x029', '003x027']
+1271 patches, dim=2048
+  Processing TENX116 (PAAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['003x012', '003x013', '003x014']
+2068 patches, dim=2048
+  Processing TENX115 (SKCM)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['004x009', '005x008', '005x009']
+1628 patches, dim=2048
+  Processing ZEN49 (READ)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAAGTATCTCCCA-1', 'AAACACCAATAACTGC-1', 'AAACATTTCCCGGATT-1']
+2203 patches, dim=2048
+  Processing ZEN48 (READ)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAGCTTTCAGAAG-1', 'AAACAGGGTCTATATT-1', 'AAACCGGGTAGGTACC-1']
+2385 patches, dim=2048
+  Processing ZEN40 (READ)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAAGTATCTCCCA-1', 'AAACATTTCCCGGATT-1', 'AAACCGGGTAGGTACC-1']
+2128 patches, dim=2048
+  Processing ZEN36 (READ)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAATCTACTAGCA-1', 'AAACAGAGCGACTCCT-1', 'AAACGAAGAACATACC-1']
+1691 patches, dim=2048
+  Processing NCBI689 (SKCM)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACACCAATAACTGC-1', 'AAACAGAGCGACTCCT-1', 'AAACAGCTTTCAGAAG-1']
+3084 patches, dim=2048
+  Processing NCBI688 (SKCM)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACACCAATAACTGC-1', 'AAACCGGGTAGGTACC-1', 'AAACCGTTCGTCCAGG-1']
+2615 patches, dim=2048
+  Processing NCBI687 (SKCM)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAAGTATCTCCCA-1', 'AAACAGAGCGACTCCT-1', 'AAACATTTCCCGGATT-1']
+3070 patches, dim=2048
+  Processing NCBI572 (PAAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAAGTATCTCCCA-1', 'AAACACCAATAACTGC-1', 'AAACAGAGCGACTCCT-1']
+3789 patches, dim=2048
+  Processing NCBI571 (PAAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAAGTATCTCCCA-1', 'AAACACCAATAACTGC-1', 'AAACAGAGCGACTCCT-1']
+2495 patches, dim=2048
+  Processing NCBI570 (PAAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACACCAATAACTGC-1', 'AAACAGAGCGACTCCT-1', 'AAACAGCTTTCAGAAG-1']
+3213 patches, dim=2048
+  Processing NCBI569 (PAAD)
+    .h5 keys: ['barcode', 'coords', 'img']
+    Decoded barcode sample: ['AAACAAGTATCTCCCA-1', 'AAACACCAATAACTGC-1', 'AAACAGCTTTCAGAAG-1']
+3493 patches, dim=2048
+Extraction complete.
