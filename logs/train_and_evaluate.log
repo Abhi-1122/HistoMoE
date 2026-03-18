@@ -1,0 +1,66 @@
+# python3 train_and_evaluate.py > logs/train_and_evaluate.log
+Loaded 26 samples
+  NCBI569      | PAAD | spots=3493 | genes=20615
+  NCBI570      | PAAD | spots=3213 | genes=20615
+  NCBI571      | PAAD | spots=2495 | genes=20615
+  NCBI572      | PAAD | spots=3789 | genes=20615
+  NCBI687      | SKCM | spots=3070 | genes=31053
+  NCBI688      | SKCM | spots=2615 | genes=31053
+  NCBI689      | SKCM | spots=3084 | genes=31053
+  TENX115      | SKCM | spots=1628 | genes=541
+  TENX116      | PAAD | spots=2068 | genes=538
+  TENX117      | SKCM | spots=1271 | genes=541
+  TENX118      | LUAD | spots=1838 | genes=541
+  TENX126      | PAAD | spots=1916 | genes=541
+  TENX140      | PAAD | spots=3517 | genes=541
+  TENX141      | LUAD | spots=3069 | genes=541
+  TENX158      | SKCM | spots=1535 | genes=10017
+  TENX163      | LUAD | spots=2431 | genes=18085
+  TENX168      | LUAD | spots=1825 | genes=18085
+  TENX169      | LUAD | spots=1805 | genes=18085
+  TENX170      | LUAD | spots=1689 | genes=18085
+  TENX171      | LUAD | spots=1675 | genes=18085
+  TENX189      | LUAD | spots=5817 | genes=10029
+  TENX190      | LUAD | spots=5768 | genes=541
+  ZEN36        | READ | spots=1691 | genes=36601
+  ZEN40        | READ | spots=2128 | genes=36601
+  ZEN48        | READ | spots=2385 | genes=36601
+  ZEN49        | READ | spots=2203 | genes=36601
+Dropped 8 low-gene-panel samples: ['TENX115', 'TENX116', 'TENX117', 'TENX118', 'TENX126', 'TENX140', 'TENX141', 'TENX190']
+Keeping 18 samples
+Remaining cancer types: {'PAAD', 'LUAD', 'READ', 'SKCM'}
+Finding common genes across filtered samples...
+  Common genes: 8
+Selecting top-50 HVGs by pooled variance...
+  Top HVGs: ['F5', 'C6', 'F8', 'F7', 'F12', 'F11', 'C9', 'F2']...
+Final dataset: 46943 spots | 2048 features | 8 genes
+--- Running Leave-One-Patient-Out CV ---
+  Fold 01 | NCBI569      (PAAD) | R = 0.0580
+  Fold 02 | NCBI570      (PAAD) | R = 0.0137
+  Fold 03 | NCBI571      (PAAD) | R = -0.0047
+  Fold 04 | NCBI572      (PAAD) | R = 0.0240
+  Fold 05 | NCBI687      (SKCM) | R = 0.0008
+  Fold 06 | NCBI688      (SKCM) | R = -0.0249
+  Fold 07 | NCBI689      (SKCM) | R = -0.0033
+  Fold 08 | TENX158      (SKCM) | R = 0.0520
+  Fold 09 | TENX163      (LUAD) | R = -0.0093
+  Fold 10 | TENX168      (LUAD) | R = 0.0251
+  Fold 11 | TENX169      (LUAD) | R = 0.0388
+  Fold 12 | TENX170      (LUAD) | R = 0.0500
+  Fold 13 | TENX171      (LUAD) | R = 0.0033
+  Fold 14 | TENX189      (LUAD) | R = 0.0566
+  Fold 15 | ZEN36        (READ) | R = -0.0049
+  Fold 16 | ZEN40        (READ) | R = 0.0013
+  Fold 17 | ZEN48        (READ) | R = 0.0046
+  Fold 18 | ZEN49        (READ) | R = 0.0169
+===== Global Baseline Results =====
+  PAAD    Mean R = 0.0227 ± 0.0228  (n=4 patients)
+  SKCM    Mean R = 0.0062 ± 0.0282  (n=4 patients)
+  LUAD    Mean R = 0.0274 ± 0.0239  (n=6 patients)
+  READ    Mean R = 0.0045 ± 0.0079  (n=4 patients)
+./results/global_baseline_results.csv Saved
+cancer_type  mean_pearson_r      std  n_patients
+       LUAD        0.027411 0.023903           6
+       PAAD        0.022745 0.022797           4
+       SKCM        0.006153 0.028188           4
+       READ        0.004487 0.007945           4
